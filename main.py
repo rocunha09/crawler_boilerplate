@@ -1,8 +1,9 @@
+from src.enum.EBrowser import EBrowser
 from setup.setup_selenium_browser import start
 import time
 
 def main():
-    driver, Keys, By = start()
+    driver, Keys, By = start(EBrowser.FIREFOX)
     try:
         driver.get('https://www.google.com')
 
