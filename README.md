@@ -16,8 +16,17 @@ If you, the user of this project, have any new ideas for improvement or correcti
 
 ###  Create an .env file
 ```txt
-FIREFOX_BINARY_PATH=<path_to_your_firefox_browser>
-GECKODRIVER_PATH="resources\\drivers\\firefox\\geckodriver.exe"
+FIREFOX_WIN_BINARY_PATH=<path to browser>
+GECKODRIVER_WIN_DRIVER_PATH="resources\\win_drivers\\firefox\\geckodriver.exe"
+
+CHROME_WIN_BINARY_PATH=""
+CHROME_WIN_DRIVER_PATH="resources\\win_drivers\\chrome\\chromedriver.exe"
+
+EDGE_WIN_BINARY_PATH=""
+EDGE_WIN_DRIVER_PATH="resources\\win_drivers\\edge\\msedgedriver.exe"
+
+OPERA_WIN_BINARY_PATH=""
+OPERA_WIN_DRIVER_PATH="resources\\win_drivers\\opera\\operadriver.exe"
 ```
 
 **obs.: Drivers tested in this project so far**
@@ -40,6 +49,20 @@ python -m venv venv
 ```bash
 pip install requirements.txt
 ```
+
+---
+## Using the project
+### Setup new browser/enviroment
+To add new settings for environments and browsers follow the steps:
+* Save the desired browser driver in resources/drivers
+* Register in .env the path of the desired browser and the path created for the driver.
+* Create a method in the DriverFactory class to create the desired driver with the desired settings following the established pattern.
+* Register in Enum EBrowsers the desired browser and the name of the method created in DriverFactory
+
+Now just call the start method in main() with the desired browser
+
+### Using Setups to run your Scripts
+
 
 
 ---
