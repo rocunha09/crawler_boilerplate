@@ -7,13 +7,30 @@ The technologies initially chosen are
 * Python;
 * Selenium;
 * Browsers: Chrome, Firefox, Opera, Edge;
-* Mode: simple (local use) and advanced (Provides for the use of the crawler with scalability and cloud deployment.
+* Mode: simple (local use) and advanced (Provides for the use of the crawler with scalability and cloud deployment, and others options).
 
 If you, the user of this project, have any new ideas for improvement or correction, I would be grateful to read the open issues and try to implement them.
 
 ---
-## Pré-requisitos
+## Prerequisites
 
-### .env file
-FIREFOX_BINARY_PATH="<path_to_your_firefox_browser>firefox.exe"
-GECKODRIVER_PATH="<path_to_gecko_driver>geckodriver.exe"
+###  Create an .env file
+```txt
+FIREFOX_BINARY_PATH=<path_to_your_firefox_browser>
+GECKODRIVER_PATH="resources\\drivers\\firefox\\geckodriver.exe"
+```
+
+### Create a virtual environment to set the stage for the project
+1. creating enviroment
+```bash
+python -m venv venv
+```
+2. activating enviroment
+```bash
+./venv/Scripts/activate
+```
+
+### Install dependencies
+```bash
+pip install requirements.txt
+```
