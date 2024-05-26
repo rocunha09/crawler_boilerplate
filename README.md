@@ -12,3 +12,8 @@ The technologies initially chosen are
 If you, the user of this project, have any new ideas for improvement or correction, I would be grateful to read the open issues and try to implement them.
 
 ---
+## Pré-requisitos
+
+### .env file
+FIREFOX_BINARY_PATH="<path_to_your_firefox_browser>firefox.exe"
+GECKODRIVER_PATH="<path_to_gecko_driver>geckodriver.exe"
